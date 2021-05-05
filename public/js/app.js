@@ -6,7 +6,7 @@ const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
 
 weatherForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault();  // prevents the page from reloding after form submission
     const location = search.value;
     if(location === "") {
         messageOne.textContent = 'You must enter a locaiton!';
